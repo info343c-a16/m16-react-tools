@@ -6,6 +6,17 @@ React and other modern JavaScript development approaches require leveraging a va
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Contents**
+
+- [Resources](#resources)
+- [Importing and Exporting in ES6](#importing-and-exporting-in-es6)
+  - [Named v.s. default exports](#named-vs-default-exports)
+- [Node Package Manager (NPM)](#node-package-manager-npm)
+  - [Set up](#set-up)
+  - [Installing Packages](#installing-packages)
+  - [.gitignore](#gitignore)
+- [Create-React-App](#create-react-app)
+  - [Building](#building)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -246,4 +257,4 @@ In order to build your app for deployment, you will use the `npm run build` comm
 
 ```
 
-By setting the homepage, the relative paths will be properly constructed. 
+By setting the homepage, the relative paths will be properly constructed. This will create for you a folder called `build`, in which you'll have the necessary files. I suggest **moving these up a directory** (i.e., out of the `build/` folder) if you're going to use your GitHub repo for hosting (this is an unfortunate manual step). Then you should be ready to deploy!
