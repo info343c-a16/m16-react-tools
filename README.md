@@ -219,3 +219,31 @@ my-app/
 ```
 
 From there, you can begin editing your `App.js` file. Your `<App/>` component is rendered on the page, so you should augment it as you see fit.
+
+### Building
+In order to build your app for deployment, you will use the `npm run build` command. This will appropriately compile your files (including JavaScript, CSS, images, etc.) into an optimized format. The only tricky thing is if you're trying to host your build at a particular location. For example, imagine you're going to host your site at `http://students.washington.edu/YOUR-NAME/info-343/project-name`. Create React App assumes that you'll be hosting your project in the **root of your server**. In other words, when it builds, it will construct relative paths that assume resources are at the root. To adjust this, you'll need to edit your `package.json` file:
+
+```javascript
+{
+  "name": "project-name",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.7.0"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "homepage": "http://students.washington.edu/YOUR-NAME/info-343/project-name"
+}
+
+```
+
+By setting the homepage, the relative paths will be properly constructed. 
