@@ -1,0 +1,16 @@
+.button {
+    margin-right:20px;
+}
+
+.videoPage{
+    text-align: center;
+}
+
+.controls {
+    margin-top:20px;
+    margin-bottom:10px;
+}
+iframe {
+    width:80%;
+    height: 70vh;
+}
