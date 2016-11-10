@@ -6,7 +6,7 @@ var LandingPage = React.createClass({
         return(
             <div className="landing">
                 <h1>
-                    A few things to help you heal...
+                    Some joyful videos and inspiring quotes for an emotional time...
                 </h1>
             </div>
         )
