@@ -18,3 +18,7 @@
 .quotePage {
     text-align: center;
 }
+
+.quotePage p {
+    font-size:2em;
+}
