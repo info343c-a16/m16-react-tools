@@ -7,7 +7,7 @@ import {RaisedButton} from 'material-ui';
 
 // Page of videos
 var VideoPage = React.createClass({
-	// Get initial state: videso (empty array) and currentVideo (0)
+	// Get initial state: videos (empty array) and currentVideo (0)
 	getInitialState(){
 		return{videos:[], currentVideo:0}
 	},
